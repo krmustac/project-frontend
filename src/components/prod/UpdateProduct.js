@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import ProductService from '../../services/ProductService';
+import Footer from '../Footer';
 
 const UpdateProduct = () => {
     
@@ -44,7 +45,7 @@ const UpdateProduct = () => {
     }
 
   return (
-    <div className="flex max-w-2xl mx-auto shadow border-b">
+    <div className="rounded flex max-w-2xl mx-auto shadow border-b bg-white mt-3 mb-16  min-h-fit w-fit">
         <div className="px-8 py-8">
             <div className="font-thin text-2xl tracking-wider">
                 <h1>Update product</h1>
@@ -97,7 +98,7 @@ const UpdateProduct = () => {
                     Cancle
                 </button>
             </div>
-            
+            <Footer/>
         </div>
     </div>
   )

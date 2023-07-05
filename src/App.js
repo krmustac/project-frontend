@@ -5,6 +5,7 @@ import ProductList from './components/prod/ProductList';
 import AddProduct from './components/prod/AddProduct';
 import UpdateProduct from './components/prod/UpdateProduct';
 import Footer from './components/Footer';
+import WelcomePage from './components/WelcomePage';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route index element={<ProductList/>}></Route>
-        <Route path='/' element={<ProductList/>}></Route>
+        <Route index element={<WelcomePage/>}></Route>
+        <Route path='/' element={<WelcomePage/>}></Route>
         <Route path='/productList' element={<ProductList/>}></Route>
         <Route path='/addProduct' element={<AddProduct/>}></Route>
         <Route path='/editProduct/:id' element={<UpdateProduct/>}></Route>
@@ -23,7 +24,7 @@ function App() {
       
       
     </BrowserRouter>
-    <Footer/>
+    
     </>
   );
 }

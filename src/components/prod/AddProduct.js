@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ProductService from '../../services/ProductService';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../Footer';
 
 const AddProduct = () => {
 
@@ -41,7 +42,7 @@ const AddProduct = () => {
         });
     }
   return (
-    <div className="flex max-w-2xl mx-auto shadow border-b bg-white mt-3 mb-16  min-h-fit">
+    <div className="rounded flex max-w-2xl mx-auto shadow border-b bg-white mt-3 mb-16  min-h-fit w-fit">
         <div className="px-8 py-8">
             <div className="font-thin text-2xl tracking-wider">
                 <h1>Add new product</h1>
@@ -92,8 +93,9 @@ const AddProduct = () => {
                     Clear
                 </button>
             </div>
-            
+            <Footer/>
         </div>
+        
     </div>
   );
 };
