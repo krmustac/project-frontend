@@ -95,7 +95,7 @@ const UpdateProduct = () => {
                 <button
                 onClick={()=> navigate("/productList")}
                 className=' rounded font-semibold bg-red-400 py-2 px-2 hover:bg-red-800'>
-                    Cancle
+                    Cancel
                 </button>
             </div>
             <Footer/>
