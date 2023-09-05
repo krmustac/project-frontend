@@ -3,6 +3,8 @@ import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
+  { name: 'Login', href: '/login', current: false },
+  { name: 'Register', href: '/register', current: false },
   { name: 'Products', href: '/productList', current: false },
   { name: 'New Product', href: '/addProduct', current: false },
 ]
